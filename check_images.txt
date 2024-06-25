@@ -1,0 +1,41 @@
+Questions regarding Uploaded Image Classification:
+
+1. Did the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed? 
+If not, report the differences in the classifications.
+
+Answer: 
+Yes, the three model architectures classified the breed of dog in Great_dane_05320.jpg (Dog_01.jpg)
+to be the same breed: "great dane".
+
+2. Did each of the three model architectures classify the breed of dog in Dog_01.jpg to be the same breed 
+of dog as that model architecture classified Dog_02.jpg? If not, report the differences in the 
+classifications.
+
+Answer:
+Yes, the three model architectures classified the breed of dog in Dog_01.jpg to be the same breed of 
+dog as that model architecture classified Dog_02.jpg. I used Great_dane_05320.jpg (Dog_01.jpg) and took
+its mirrored image Great_dane_05320 copy.jpg (Dog_02.jpg). All three model architectures correctly 
+classified the breed for both images to be "great dane".
+
+3. Did the three model architectures correctly classify Animal_Name_01.jpg and Object_Name_01.jpg to 
+not be dogs? If not, report the misclassifications.
+
+Answer: 
+Yes, the three model architectures correctly classified Rabbit_002.jpg (Animal_Name_01.jpg) and 
+coffee_mug.jpg (Object_Name_01.jpg) to not be dogs. Additionally, for all three model architectures in both 
+the PetLabelDog and ClassLabelDog were set to 0. As well as the calculated statistics from 
+calculates_results_stats() function returned that the number of dog images is two and the number 
+of not dog images is two. 
+
+4. Based upon your answers for questions 1. - 3. above, select the model architecture that you feel did 
+the best at classifying the four uploaded images. Describe why you selected that model architecture as 
+the best on uploaded image classification.
+
+Answer:
+The model architecture tha I feel best classified the four uploaded images was the AlexNet CNN model 
+architecture. Overall, AlexNet and ResNet both had similar results and classified better than VGG. However, 
+the total elapsed time for AlexNet was only 24 seconds, while ResNet took 25 seconds. On the other hand, 
+VGG took 27 seconds. VGG had only 3 matches failed to classify coffee_mug.jpg as a "coffee mug" instead 
+classified it as "eggnog" which both AlexNet and ResNet were able to classify successfully as "coffee mug". 
+Therefore, due to the number of matches and time taken, AlexNet was the best model architecture on 
+uploaded image classification.
